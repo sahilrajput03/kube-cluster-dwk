@@ -9,7 +9,9 @@ spec:
   # url: https://github.com/kubernetes-hy/material-example
   url: https://github.com/sahilrajput03/devopswithkubernetes
   ref:
-    branch: master
+    # ORIGINALLY 
+    # branch: master
+    branch: main
 
   # NOTES SAHIL #1 HERE...
   # FYI(sahil): The `.metadata.name` and `.metadata.namespace` defined here
