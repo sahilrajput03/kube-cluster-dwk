@@ -1,0 +1,27 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: project-gitops-app
+  namespace: flux-system
+spec:
+  sourceRef:
+    kind: GitRepository
+    name: project-repo
+  # interval: 10m
+  interval: 60s
+  # path: ./4-gitops/manifests # Path tells where to find the files. Excellent for "monorepos" where you have multiple different applications in one repository, like the example repository.
+  path: ./exercises/ex4-08/ex4-06/ex2-08-statefulsets/manifests
+  prune: true # This will make sure that deleting the file will delete the resource
+  validation: client # Who validates the objects. Server or the client.
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: project-repo
+  namespace: flux-system
+spec:
+  # interval: 10m
+  interval: 60s
+  url: https://github.com/sahilrajput03/devopswithkubernetes
+  ref:
+    branch: main
