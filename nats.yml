@@ -11,3 +11,4 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: my-nats-repo
+# Docs for `Helm Release`: https://fluxcd.io/docs/guides/helmreleases/#define-a-helm-release

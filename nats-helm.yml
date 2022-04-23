@@ -8,5 +8,4 @@ spec:
   interval: 1m
   # url: https://stefanprodan.github.io/podinfo
   url: https://nats-io.github.io/k8s/helm/charts/
-
-
+# Docs `Helm Repository`: https://fluxcd.io/docs/guides/helmreleases/#helm-repository
