@@ -8,7 +8,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: example-repo
-  interval: 2m
+  interval: 10m
     # interval here means interval after which the source resources to be recomputed from the kustomization.yml file and used to apply to cluster: `kc apply -k .` :https://fluxcd.io/docs/components/kustomize/kustomization/#reconciliation
   path: ./4-gitops/manifests # Path tells where to find the files. Excellent for "monorepos" where you have multiple different applications in one repository, like the example repository.
   prune: true # This will make sure that deleting the file will delete the resource

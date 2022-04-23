@@ -7,8 +7,8 @@ spec:
   sourceRef:
     kind: GitRepository
     name: project-repo
-  # interval: 10m
-  interval: 2m
+  interval: 10m
+  # interval: 2m
   # path: ./4-gitops/manifests # Path tells where to find the files. Excellent for "monorepos" where you have multiple different applications in one repository, like the example repository.
   path: ./exercises/ex4-08/ex4-06/ex2-08-statefulsets/manifests
   prune: true # This will make sure that deleting the file will delete the resource

@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
   # NOTES SAHIL #1
 spec:
-  interval: 2m
+  interval: 10m
   # url: https://github.com/kubernetes-hy/material-example
   url: https://github.com/sahilrajput03/devopswithkubernetes
   ref:
